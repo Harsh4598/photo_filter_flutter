@@ -134,12 +134,12 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(
-                      flex: 10,
+                      flex: 11,
                       child: Container(
                         width: double.infinity,
                         height: double.infinity,
                         padding: EdgeInsets.only(
-                          top: size.width * 0.20,
+                          top: size.width * 0.25,
                           bottom: size.width * 0.10,
                           right: size.width * 0.10,
                           left: size.width * 0.10,
@@ -269,8 +269,8 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
                       topLeft: Radius.circular(size.width * 0.02),
                       topRight: Radius.circular(size.width * 0.02),
                     ),
-                    child: Image.asset(
-                      "assets/image.jpg",
+                    child: Image.memory(
+                      snapshot.data,
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -295,8 +295,8 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
               topRight: Radius.circular(size.width * 0.02),
             ),
             child: Container(
-              child: Image.asset(
-                "assets/image.jpg",
+              child: Image.memory(
+                cachedFilters[filter?.name ?? "_"],
                 fit: BoxFit.fill,
               ),
             ),
