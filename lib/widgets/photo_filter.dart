@@ -236,7 +236,8 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
               return Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: Container(
-                  height: Platform.isIOS?  size.height * 0.09:size.height * 0.107,
+                  height:
+                      Platform.isIOS ? size.height * 0.09 : size.height * 0.107,
                   width: size.width * 0.18,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
@@ -256,7 +257,8 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
               return Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: Container(
-                  height: Platform.isIOS?  size.height * 0.09:size.height * 0.107,
+                  height:
+                      Platform.isIOS ? size.height * 0.09 : size.height * 0.107,
                   width: size.width * 0.18,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
@@ -284,7 +286,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
       return Padding(
         padding: const EdgeInsets.all(5.0),
         child: Container(
-          height: Platform.isIOS?  size.height * 0.09:size.height * 0.107,,
+          height: Platform.isIOS ? size.height * 0.09 : size.height * 0.107,
           width: size.width * 0.18,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(size.width * 0.03),
