@@ -139,7 +139,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
                         width: double.infinity,
                         height: double.infinity,
                         padding: EdgeInsets.only(
-                          top: size.width * 0.25,
+                          top: size.width * 0.10,
                           bottom: size.width * 0.10,
                           right: size.width * 0.10,
                           left: size.width * 0.10,
